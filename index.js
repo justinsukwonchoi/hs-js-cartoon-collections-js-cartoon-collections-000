@@ -21,8 +21,7 @@ function summonCaptainPlanet(planeteerCalls){ //<-array of strings
 
 function longPlaneteerCalls(calls) {
   for (let i = 0; i < calls.length; i++) {
-    let call = calls[i]
-    if (call.length > 4) {
+    if (calls[i].length > 4) {
       return true
     }
   }
@@ -31,9 +30,7 @@ function longPlaneteerCalls(calls) {
 
 function findTheCheese (foods) {
   var cheeses = ["cheddar", "gouda", "thyme"]
-  
-  console.log(foods)
-  
+
   for (let i = 0; i < foods.length; i++) {
     if (cheeses.includes(foods[i])) {
       return foods[i];
