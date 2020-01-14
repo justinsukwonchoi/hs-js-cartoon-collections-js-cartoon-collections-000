@@ -2,8 +2,9 @@ function dwarfRollCall(dwarves) {
   var result = ''
   
   for (let i = 0; i < dwarves.length; i++) {
-    var num = i + 1;
     var name = dwarves[i];
+    var num = i + 1;
+    
     var string = `${num}. ${name} `;
     result += string;
   }
@@ -19,7 +20,7 @@ function summonCaptainPlanet(planeteerCalls){ //<-array of strings
   return planeteerCalls
 }
 
-function longPlaneteerCalls(calls) {
+function longPlaneteerCalls(calls) { //<-- array of words
   for (let i = 0; i < calls.length; i++) {
     if (calls[i].length > 4) {
       return true
